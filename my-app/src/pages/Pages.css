@@ -1,0 +1,186 @@
+/* src/pages/Pages.css */
+/* Allgemeine Seitenstile */
+.page-container {
+    @apply space-y-6;
+}
+
+.page-header {
+    @apply flex flex-col md:flex-row justify-between items-start md:items-center mb-6;
+}
+
+.page-title {
+    @apply text-2xl font-bold text-gray-800;
+}
+
+.page-subtitle {
+    @apply text-gray-600 mt-1;
+}
+
+.page-action-button {
+    @apply mt-4 md:mt-0 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm;
+}
+
+/* Dashboard-spezifische Stile */
+.stat-cards {
+    @apply grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4;
+}
+
+.stat-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow;
+}
+
+.stat-card-content {
+    @apply p-5;
+}
+
+.stat-card-icon {
+    @apply rounded-full p-3 text-white;
+}
+
+.stat-card-title {
+    @apply text-sm font-medium text-gray-500;
+}
+
+.stat-card-value {
+    @apply text-2xl font-bold text-gray-700;
+}
+
+.quick-actions {
+    @apply grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4;
+}
+
+.quick-action-button {
+    @apply flex items-center justify-center bg-white p-3 rounded-md shadow-sm hover:shadow-md transition-shadow;
+}
+
+.premium-alert {
+    @apply bg-blue-50 border-l-4 border-blue-500 p-4 rounded;
+}
+
+/* Kontakt-spezifische Stile */
+.contact-filter-bar {
+    @apply p-4 border-b border-gray-200;
+}
+
+.contact-search {
+    @apply relative flex-grow;
+}
+
+.contact-search-icon {
+    @apply absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none;
+}
+
+.contact-search-input {
+    @apply pl-10 pr-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.contact-search-clear {
+    @apply absolute inset-y-0 right-0 pr-3 flex items-center;
+}
+
+.contact-filter-dropdown {
+    @apply relative;
+}
+
+.contact-filter-icon {
+    @apply absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none;
+}
+
+.contact-filter-select {
+    @apply pl-10 pr-8 py-2 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.contact-type-badge {
+    @apply px-2 inline-flex text-xs leading-5 font-semibold rounded-full;
+}
+
+.contact-lead-score {
+    @apply w-16 bg-gray-200 rounded-full h-2.5;
+}
+
+.contact-avatar {
+    @apply flex-shrink-0 h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center;
+}
+
+/* Aufgaben-spezifische Stile */
+.task-item {
+    @apply flex items-start;
+}
+
+.task-checkbox {
+    @apply h-4 w-4 text-blue-600 border-gray-300 rounded mt-1;
+}
+
+.task-content {
+    @apply ml-3 flex-1;
+}
+
+.task-title {
+    @apply text-sm font-medium;
+}
+
+.task-title-completed {
+    @apply text-gray-400 line-through;
+}
+
+.task-meta {
+    @apply flex justify-between mt-1;
+}
+
+.task-date {
+    @apply flex items-center text-xs text-gray-500;
+}
+
+.task-overdue {
+    @apply text-red-600 font-medium;
+}
+
+/* Pipeline-spezifische Stile */
+.pipeline-container {
+    @apply mb-6 bg-white shadow-md rounded-lg overflow-hidden;
+}
+
+.pipeline-header {
+    @apply flex justify-between items-center p-4 bg-gray-50 border-b border-gray-200;
+}
+
+.pipeline-title {
+    @apply text-lg font-medium text-gray-700;
+}
+
+.pipeline-actions {
+    @apply flex space-x-2;
+}
+
+.pipeline-stages {
+    @apply flex overflow-x-auto p-4 space-x-4;
+}
+
+.pipeline-stage {
+    @apply flex-shrink-0 w-72 bg-gray-50 rounded-lg border border-gray-200;
+}
+
+.pipeline-stage-header {
+    @apply flex justify-between items-center p-3 border-b border-gray-200 bg-gray-100;
+}
+
+.pipeline-stage-title {
+    @apply text-sm font-medium text-gray-700;
+}
+
+.pipeline-stage-count {
+    @apply text-xs text-gray-500;
+}
+
+.pipeline-stage-contacts {
+    @apply p-2 overflow-y-auto;
+    max-height: 400px;
+}
+
+.pipeline-contact-card {
+    @apply bg-white p-3 mb-2 rounded shadow-sm hover:shadow transition-shadow;
+}
+
+.pipeline-add-stage {
+    @apply flex-shrink-0 w-48 h-48 flex items-center justify-center border-2 border-dashed border-gray-300 rounded-lg hover:border-gray-400;
+}

@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# MLM CRM - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ein intelligentes CRM für MLM-Versicherungsvertreter, das sowohl das Versicherungsgeschäft als auch den Aufbau von Teams unterstützt.
 
-## Available Scripts
+## Überblick
 
-In the project directory, you can run:
+Dieses Repository enthält den Frontend-Code für die MLM CRM Anwendung, eine spezialisierte CRM-Lösung für Versicherungsvertreter in MLM-Strukturen. Die Anwendung ermöglicht die Verwaltung von Kontakten, Aufgaben, Pipelines und Teams und bietet Premium-Funktionen wie KI-gestützte Lead-Bewertung und Follow-Up-Vorschläge.
 
-### `npm start`
+## Hauptfunktionen
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Kontaktverwaltung**: Verwaltung von Kunden und potentiellen Partnern
+- **Aufgabenverwaltung**: Planung und Nachverfolgung von Aufgaben
+- **Pipeline-Visualisierung**: Tracking von Verkaufs- und Rekrutierungsprozessen
+- **Team-Übersicht**: Verwaltung der Downline (nur Premium)
+- **KI-Features**: Lead-Scoring und Follow-Up-Vorschläge (nur Premium)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologie-Stack
 
-### `npm test`
+- **Frontend**: React, React Router, Tailwind CSS
+- **Backend**: Django, Django REST Framework
+- **Authentifizierung**: JWT-Token
+- **Datenspeicherung**: PostgreSQL
+- **KI-Integration**: Google AI Services
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Projektstruktur
 
-### `npm run build`
+Die Anwendung ist modular aufgebaut und nach Funktionsbereichen organisiert. Siehe [STRUKTUR.md](STRUKTUR.md) für eine detaillierte Dokumentation der Projektstruktur.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## CSS-Organisation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Das Styling basiert auf Tailwind CSS und ist in modulare CSS-Dateien organisiert. Siehe [CSS-Struktur.md](CSS-Struktur.md) für eine detaillierte Dokumentation der CSS-Organisation.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation und Entwicklung
 
-### `npm run eject`
+### Voraussetzungen
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js (>= 14.x)
+- npm (>= 7.x)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Repository klonen:
+   ```
+   git clone [repository-url]
+   cd mlm-crm-frontend
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Abhängigkeiten installieren:
+   ```
+   npm install
+   ```
 
-## Learn More
+3. Umgebungsvariablen konfigurieren:
+   Erstelle eine `.env`-Datei im Root-Verzeichnis und füge folgende Variablen hinzu:
+   ```
+   REACT_APP_API_BASE_URL=http://localhost:8000
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Entwicklungsserver starten:
+   ```
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Für den Produktions-Build:
+   ```
+   npm run build
+   ```
 
-### Code Splitting
+## Integration mit dem Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Die Kommunikation mit dem Backend erfolgt über den zentralen API-Service in `services/api.js`. Dieser Service kümmert sich um die Authentifizierung und Fehlerbehandlung.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Nächste

@@ -1,0 +1,75 @@
+/* src/pages/auth/Auth.css */
+.auth-container {
+    @apply min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center p-4;
+}
+
+.auth-wrapper {
+    @apply max-w-md w-full;
+}
+
+.auth-logo {
+    @apply text-center mb-8;
+}
+
+.auth-logo h1 {
+    @apply text-3xl font-bold text-blue-600;
+}
+
+.auth-logo p {
+    @apply text-gray-600 mt-2;
+}
+
+.auth-card {
+    @apply bg-white shadow-xl rounded-lg overflow-hidden;
+}
+
+.auth-footer {
+    @apply text-center text-gray-500 text-sm mt-4;
+}
+
+/* Formular-Stile */
+.form-group {
+    @apply mb-4;
+}
+
+.form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.form-input-error {
+    @apply border-red-500;
+}
+
+.form-error-text {
+    @apply text-red-500 text-xs mt-1;
+}
+
+.form-forgot-password {
+    @apply mt-1 text-right;
+}
+
+.form-forgot-password a {
+    @apply text-sm text-blue-600 hover:text-blue-800;
+}
+
+/* Button-Stile */
+.btn-primary {
+    @apply w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors;
+}
+
+.btn-primary:disabled {
+    @apply bg-blue-400 cursor-not-allowed;
+}
+
+.btn-secondary {
+    @apply w-full bg-white border border-gray-300 text-gray-700 font-medium py-2 px-4 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors;
+}
+
+/* Alert-Stile */
+.alert-error {
+    @apply bg-red-50 text-red-700 p-3 rounded mb-4;
+}
